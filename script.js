@@ -1,3 +1,71 @@
+// Relational Operator : >=, > , < , <= , ==  it returns only booleans
+console.log(9 == 9); // o/p : true
+// console.log(10 > 9 ); // o/p : true 
+// console.log(10 >= 9 ); // o/p : true 
+// console.log( 9 >= 9 ); // o/p : true 
+// console.log(10 < 9); // o/p : false
+// console.log(9 <= 9);  // o/p : true
+// console.log(45678%1000);  // o/p : 678 Remainder (last ki three digit find kiya)
+// console.log(45678%100); // O/p : 78 Remainder (last ki two digit find kiya)
+// console.log(45678%10); // O/P : 8 Remainder (last ki ek digit find kiya) 
+// console.log(Math.floor(45678/1000)); // O/p : 45___ (last three digit remove kiya)
+// console.log(Math.floor(45678/100));// O/P :456__ (last two digit remove kiya)
+// console.log(Math.floor(45678/10)); // O/p :4567_ (last ek digit remove kiya)
+// console.log(Math.floor(2/10));
+// console.log(Math.floor(2%10));
+// console.log(Math.floor(8%10));
+// console.log(Math.floor(10%3));
+// console.log(Math.floor(9.1/3));
+
+// let y = 7;
+// y += 2;
+// y *= 3;
+// y -= 4;
+// y %= 5;
+// console.log(y); // output : 3
+
+// DSA problems :-
+// Problem : 01  Sum of Two Integer 
+// const fs = require('fs')
+// class Solution {
+//         static main(){
+//          const input = fs.readFileSync('/dev/stdin','utf-8').trim().split(/\s+/)
+//          if(input.length >= 2){
+//                 const a = parseInt([0],10)
+//                 const b = parseInt([1],10)
+//                 console.log(a + b);
+//          }
+//         }
+// }
+// module.exports = {Solution}
+
+// Problem : 02 Greet the User 
+// const fs = require('fs')
+// Input read karna 
+// const input = fs.readFileSync(0,'utf-8').trim().split("\n")
+// function Solution(){
+//         const name = input[0].trim()
+//         const age = input[1].trim()
+
+//         console.log(`Hello ${name} you are ${age} years old. `);
+// }
+// module.exports = {Solution}
+
+// Problem : 03 Swap two Numbers 
+// function swapNumbers(a,b){
+//         [a,b] = [b,a]
+//         console.log(a);
+//         console.log(b);
+// }
+// module.exports = swapNumbers
+
+// Problem : 04 Compound Interest Calculation 
+// Yaha basically input read nhi kiya because parameters mai hai  
+// function calculateCompoundInterest(P,r,t,n){
+//         const amount = P * Math.pow(1 + r / n, n * t)
+//         return (amount-P).toFixed(2)
+// }
+// module.exports = {calculateCompoundInterest}
 
 // Variable Swaping method : 01
 // let a = 10
@@ -93,12 +161,12 @@
 // console.log(a);
 
 // const temp = 10
-// // temp = 100 // it is constant variable
+// // temp = 100 // error : it is constant variable
 // console.log(temp);
 
 // let apne scope declaration se pehle Temporal Dead Zone mai rehta hai 
 // temp = 120 // reassign work karega let or var mai 
-// console.log(temp); // error : before initializzation access nhi hota hai let mai 
+// console.log(temp); // error : before initialization access nhi hota hai let mai 
 // let temp = 20
 
 // console.log(temp); // var error nhi  sirf undefined dega 
