@@ -1,5 +1,82 @@
+
+// OTP Genrate karna : Random 4Digit otp genrate karega
+// console.log(Math.trunc((Math.random()*8999)+1000));
+
+// let prompt = require("prompt-sync")() // it is directely not Working in Browser 
+// require Node.js ka feature or prompt-sync Node.js ka package hai
+// let p = Number(prompt("Enter Principal"))
+// let r = Number( prompt("Enter Rate"))
+// let t = Number(prompt("Enter time"))
+
+// // let Result = ((p*Math.pow(1+(r/100),t)-p).toFixed(2))
+// let Result =  ((p*Math.pow(1+r/100,t) - p).toFixed(2))
+// console.log(Result);
+
+// console.log(Math.min(2,0,-3,-7,5)); // min = -7
+// console.log(Math.pow(2,3)); // O/P : 8
+// console.log(Math.ceil(10.1));   o/p : 11 ( value +1 kar dega )
+// console.log(Math.floor(10.9)); //  o/p : 10 (floor value dega)
+// console.log(Math.round(10.4));  o/p : 10 (10.1 to 10.4 tak floor value)
+// console.log(Math.round(10.5));  o/p : 11 (10.5 to 10.9 tak ceil value)
+// console.log(Math.trunc(10.647222)); // o/p : 10
+// console.log(Math.pow(3,2)); // 3*3 = 9
+// console.log(Math.max(10,45,78,63)); // o/p : 78 highest value return karega
+// console.log(Math.min(76,23,45,0,23,89,-7,-4,-100)); // o/p : -100 lowest value return 
+// console.log(Math.random()); // 0(inclusive) to 1(exclusive) ke random values dega 
+// console.log(233.4658.toFixed(2)); //o/p : 233.46 it used for point ke bad kitne value chahiye 
+
+// Increment And Decrement 
+// let a = 10++
+// let a = 10
+// ++(++a)   // error (left-hand side)
+// console.log(a);
+
+// let a = true  // true = 1
+// a++          //  1 + 1 = 2
+// console.log(a); // o/p = 2
+// console.log(a++); // value use then increment
+// console.log(a);  // o/p = 3
+
+// let a = 12
+// let b = 15
+// let c = 8
+// let d = (a++) + (--b) - (c++) + (++a) // pehle (-) then plus (+) karna hai
+// console.log(d);
+
+// Post increment 
+// let a = 10
+// a++
+// console.log(a);
+// let a = 10
+//  let b = a++
+//  console.log(a);
+//  console.log(b); // because b mai a ko increment kiya a++
+//  Pre increment
+// let x = 10
+// let y = ++x
+// console.log(x);
+// console.log(y);
+
+// Logical Operator : && , || , !
+// console.log(!true); // false
+// console.log(!false); // true
+// ||
+// console.log(56>60||60>75||5<8); // true
+// console.log( false||false||true); // true
+// &&
+// console.log(12>7 && 8<56); // true
+// console.log(true && true); // true
+// console.log(16>56 && 5<31 && 25>5); // false
+// console.log(false && true); // false 
+// console.log(true && false); // false
+// console.log(false && false); // false
+
 // Relational Operator : >=, > , < , <= , ==  it returns only booleans
-console.log(9 == 9); // o/p : true
+// console.log(0 != 2); // o/p : true
+// console.log(9 != 9); // o/p : false 
+// console.log('9' === 9); // false it check type of data 
+// console.log('9' == 9);// it is also true 
+// console.log(9 == 9); // o/p : true
 // console.log(10 > 9 ); // o/p : true 
 // console.log(10 >= 9 ); // o/p : true 
 // console.log( 9 >= 9 ); // o/p : true 
@@ -23,49 +100,6 @@ console.log(9 == 9); // o/p : true
 // y -= 4;
 // y %= 5;
 // console.log(y); // output : 3
-
-// DSA problems :-
-// Problem : 01  Sum of Two Integer 
-// const fs = require('fs')
-// class Solution {
-//         static main(){
-//          const input = fs.readFileSync('/dev/stdin','utf-8').trim().split(/\s+/)
-//          if(input.length >= 2){
-//                 const a = parseInt([0],10)
-//                 const b = parseInt([1],10)
-//                 console.log(a + b);
-//          }
-//         }
-// }
-// module.exports = {Solution}
-
-// Problem : 02 Greet the User 
-// const fs = require('fs')
-// Input read karna 
-// const input = fs.readFileSync(0,'utf-8').trim().split("\n")
-// function Solution(){
-//         const name = input[0].trim()
-//         const age = input[1].trim()
-
-//         console.log(`Hello ${name} you are ${age} years old. `);
-// }
-// module.exports = {Solution}
-
-// Problem : 03 Swap two Numbers 
-// function swapNumbers(a,b){
-//         [a,b] = [b,a]
-//         console.log(a);
-//         console.log(b);
-// }
-// module.exports = swapNumbers
-
-// Problem : 04 Compound Interest Calculation 
-// Yaha basically input read nhi kiya because parameters mai hai  
-// function calculateCompoundInterest(P,r,t,n){
-//         const amount = P * Math.pow(1 + r / n, n * t)
-//         return (amount-P).toFixed(2)
-// }
-// module.exports = {calculateCompoundInterest}
 
 // Variable Swaping method : 01
 // let a = 10
