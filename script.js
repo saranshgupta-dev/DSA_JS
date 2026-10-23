@@ -1,3 +1,30 @@
+// 01 : Accept two Numbers and print Greatest between them 
+// let a = Number(prompt("Enter your first Number"))
+// let b = Number(prompt("Enter your second Number"))
+// if(a>b) console.log(' The Greatest is A : ',a);
+// else console.log('The Greatest is B : ',b);
+
+// 02 : Accept an integer and check whether it is even Number  or odd 
+let a = Number(prompt('Enter the Number'))
+if(a%2 != 0)console.log(a,"This is odd Number"); // 1,3,5,7 = odd
+// if(a%2 == 0)console.log("This is even Number"); // 2,4,6,12,14 = even
+else console.log(a,"This is even Number"); // 2,4,6,8 = even
+
+// if-else with else-if
+// let marks = Number(prompt("Enter Your marks"))
+// if(marks>=90)console.log("Excellent Result");
+// else if(marks>=80)console.log("very Good Result");
+// else if(marks>=75)console.log("Good Result");
+// else if(marks>=33)console.log("You Are Just Passed");
+// else console.log("Ooh! You Fail");
+
+// if-else 
+// let age = Number(prompt("Enter Your Age"))
+// if(age>= 18){
+//         console.log("Valid Voter");
+// }else {
+//         console.log("invalid Voter");
+// }
 
 // OTP Genrate karna : Random 4Digit otp genrate karega
 // console.log(Math.trunc((Math.random()*8999)+1000));
