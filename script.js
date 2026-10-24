@@ -1,3 +1,75 @@
+
+// let x = 0
+// if(x){
+//         console.log("truthy");
+// }else{
+//         console.log("falsy");
+// }
+
+// function calculateElectricityBill(unit) {
+//     let bill 
+//     if(unit <= 100){
+//         bill = unit * 4.2
+//     } else if(unit >= 101 && unit <= 200){
+//         bill = unit * 6
+        
+//     } else if(unit >= 201 && unit <= 400){
+//         bill = unit * 8
+        
+//     } else if (unit >= 400){
+//         bill = unit * 13
+        
+//     }
+//     return bill.toFixed(1)
+    
+// } // es code mai 2/8 test case pass hue hai only 
+
+// function calculateElectricityBill(unit) {
+//   if (typeof unit !== 'number' || unit <= 0) {
+//     return (0).toFixed(1);
+//   }
+
+//   let bill = 0;
+
+//   // Slab 1: Up to 100 units @ ₹4.2/unit
+//   const slab1Units = Math.min(unit, 100);
+//   bill += slab1Units * 4.2;
+
+//   // Slab 2: 101 to 200 units @ ₹6/unit
+//   if (unit > 100) {
+//     const slab2Units = Math.min(unit - 100, 100);
+//     bill += slab2Units * 6;
+//   }
+
+//   // Slab 3: 201 to 400 units @ ₹8/unit
+//   if (unit > 200) {
+//     const slab3Units = Math.min(unit - 200, 200);
+//     bill += slab3Units * 8;
+//   }
+
+//   // Slab 4: Above 400 units @ ₹13/unit
+//   if (unit > 400) {
+//     const slab4Units = unit - 400;
+//     bill += slab4Units * 13;
+//   }
+
+//   // Round to exactly one decimal place
+//   return bill.toFixed(1)
+// } // esme sabhi conditions satisfy karta hai ye code 
+
+
+// function calculateElectricityBill(unit) {
+//     let bill;
+
+//     if (unit <= 0) bill = 0;
+//     else if (unit <= 100) bill = unit * 4.2;
+//     else if (unit <= 200) bill = 420 + (unit - 100) * 6;
+//     else if (unit <= 400) bill = 1020 + (unit - 200) * 8;
+//     else bill = 2620 + (unit - 400) * 13;
+
+//     return bill.toFixed(1);
+// } // ye bhi sabhi codition satisfy karta hai 
+
 // 01 : Accept two Numbers and print Greatest between them 
 // let a = Number(prompt("Enter your first Number"))
 // let b = Number(prompt("Enter your second Number"))
@@ -5,10 +77,118 @@
 // else console.log('The Greatest is B : ',b);
 
 // 02 : Accept an integer and check whether it is even Number  or odd 
-let a = Number(prompt('Enter the Number'))
-if(a%2 != 0)console.log(a,"This is odd Number"); // 1,3,5,7 = odd
-// if(a%2 == 0)console.log("This is even Number"); // 2,4,6,12,14 = even
-else console.log(a,"This is even Number"); // 2,4,6,8 = even
+// let a = Number(prompt('Enter the Number'))
+// if(a%2 != 0)console.log(a,"This is odd Number"); // 1,3,5,7 = odd
+// // if(a%2 == 0)console.log("This is even Number"); // 2,4,6,12,14 = even
+// else console.log(a,"This is even Number"); // 2,4,6,8 = even
+
+// 03 : Accept name and age from user . check if the user is valid voter or not 
+// let name = 'saransh'
+// let age = 33
+// if(age>=18){
+//         console.log(`${name} is  valid voter`);
+// }else{
+//         console.log(`${age} is not valid voter `);
+// }
+
+// 04 : accept three numbers and print greatest among them 
+// let a = Number(prompt("Enter first digit"))
+// let b = Number(prompt("Enter second digit"))
+// let c = Number(prompt("Enter third digit"))
+// console.log(a,b,c);
+// if(a > b && a > c){
+//         console.log(a,"A is Greatest");
+// }else if(b>a && b > c){
+//        console.log(b,"B is Greatest");
+// }else if(c > a && c > b){
+//         console.log(c,"C is Greatest");
+// }
+
+// 05 : Accept a year and check if it a leap year or not
+// let year = prompt("Enter year")
+// if(year % 4 == 0 && year % 100 != 0) console.log('Leap year');
+// else if(year % 400 == 0) console.log("Leap year");
+// else console.log("not Leap year");
+
+// 06 : discount on amount  limit
+// Method : 01 
+// let amount = Number(prompt("Enter your amount"))
+// let payableAmount = 0
+// if(amount>=0 && amount<=5000){
+//         payableAmount = amount
+// }
+// else if(amount>=5000 && amount <= 7000){
+//       payableAmount = amount - (amount * 5)/100
+// //       discount  = amount * discount Rate % / 100
+// //       payable = amount - discount
+// }
+// else if(amount >=7000 && amount <= 9000){
+//         payableAmount = amount - (amount * 10)/100
+// }
+// else {
+//         payableAmount = amount - (amount * 20)/100
+// }
+//    console.log("Total amount is",amount);
+//    console.log("Discount amount is ",amount - payableAmount);
+//    console.log("payable amount",payableAmount);
+// Method : 02 
+// let amount = Number(prompt("Enter amount"))
+// let dis = 0
+// if(amount>0 && amount<=5000) dis = 0
+// else if(amount>=5000 && amount<= 7000) dis = 5
+// else if(amount>=7000 && amount<= 9000) dis = 10
+// else dis = 20
+// console.log("Total amount is : ",amount);
+// console.log("discount amount ",(dis*amount)/100);
+// console.log("amount payable " , (amount - (dis*amount)/100));
+
+// 07 : Bijli Bill units calculation with multiple price
+// // Method : 01 Top Down approche
+// let unit = Number(prompt("Enter unit"))
+// let amount = 0
+// if(unit>0 && unit <=100) console.log(unit*4.2);
+// else if(unit >100 && unit<=200) {
+//         console.log(((100*4.2)+(unit-100)*6));
+// }
+// else if(unit>200 && unit<=400){
+//        console.log( ((100*4.2)+ (100*6) + (unit - 200)*8));
+// }
+// else console.log(((100*4.2)+(100*6)+(200*8) + (unit -400)*13));
+// // Method : 02 Bottom Up Aproche
+// let unit = Number(prompt("Enter unit"))
+// let amount  = 0
+// if(unit >= 400) {
+//         amount = (unit-400)*13
+//         unit = 400
+// }
+// if(unit>=200 && unit <= 400){
+//         amount = amount + (unit-200)*8
+//         unit = 200
+// }
+// if(unit>=100 && unit<=200){
+//        amount = amount + (unit-100)*6
+//        unit = 100
+// }
+// if(unit>0 && unit<=100){
+//         amount = amount + (unit*4.2)
+// }
+// console.log(amount);
+
+// 08 : counting Number of days in a given month of a year
+// let month = Number(prompt("Enter month"))
+// let year = Number(prompt("Enter year"))
+// let days = 0
+// if(month == 2){
+//      if((year%400 == 0)||(year%4 == 0 && year%100 != 0)){
+//         days = 29
+//      }else {
+//         days = 28
+//      }
+// }else if(month == 1 || month == 3 || month ==5 || month == 7 || month == 8
+//      ||   month == 10 || month == 12
+// ) days = 31
+// else days = 30
+// console.log(days);
 
 // if-else with else-if
 // let marks = Number(prompt("Enter Your marks"))

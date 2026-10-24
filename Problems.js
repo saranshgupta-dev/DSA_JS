@@ -65,3 +65,30 @@
 //     return [circumference,area]
 // }
 // console.log(calculateCircleProperties(5.2));
+
+// problem : 08 Find The Greatest of of Two Numbers
+// function findGreatest(a,b){
+//     if(a>b){
+//         return a
+//     }else{
+//         return b
+//     }
+// }
+
+// Problem : 09 Check if a Number is Even or Odd 
+// function checkEvenorOdd(num){
+//     if(num%2 == 0){
+//         return 'Even'
+//     }else{
+//         return 'Odd'
+//     }
+// }
+
+// problem : 10 Check if User is a Valid Voter 
+// function checkVoterEligibility(name,age){
+//     if(age>=18){
+//         return `${name} is a valid voter. `
+//     }else{
+//         return `${name} is not valid voter. `
+//     }
+// }
