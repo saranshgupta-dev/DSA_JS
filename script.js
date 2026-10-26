@@ -1,3 +1,98 @@
+// let n = Number(prompt("Enter Number"))
+// // n times hello world print karana hai
+// for(i= 1; i<=n; i++){
+//         console.log(i,"hello world");
+// }
+
+// console.log("Enter 1 for area of rectangle");
+// console.log("Enter 2 for area of square");
+// console.log("Enter 3 for area of triangle");
+// let n = Number(prompt())
+// switch(n){
+//         case 1:{
+//                 let len = Number(prompt("Enter length"))
+//                 let breadth = Number(prompt("Enter breadth"))
+//                 console.log('rectangle area is : ',len * breadth);
+//                 break
+//         }
+//         case 2 : {
+//                 let num = Number(prompt("Enter Number"))
+//                 console.log('square area is : ',num*num);
+//                 break
+//         }
+//         case 3 : {
+//                 let height = Number(prompt("Enter height"))
+//                 let base = Number(prompt("Enter base"))
+//                 console.log('triangle area is : ',(height*base)/2);
+//                 break
+//         }
+//         default : console.log("invalid Number");
+// }
+
+// let s = prompt("Enter a String")
+// let Consonant = 0
+// let Vowel = 0
+// for(let i = 0; i<s.length; i++){
+//    let ch = s.charAt(i)
+//      switch(ch){
+//           case 'a' :
+//           case 'e' :
+//           case 'i' :
+//           case 'o' :
+//           case 'u' : Vowel++
+//           break
+
+//       default : Consonant++
+//         }
+// }
+// console.log('Consonant is ',Consonant);
+// console.log('Vowel is ',Vowel);
+
+// Multiple case ka same Execution ho 
+// let n = Number(prompt("Enter n number"))
+// switch(n){
+//         case 1:
+//         case 3 : {
+//             console.log('Hello World');
+//             break
+//         }
+//         case 2 : {
+//              console.log('tuesday');
+//              break
+//         }
+//         // case 3 : {
+//         //     console.log('hello world');
+//         //     break
+//         // }
+//         case 4 : {
+//             console.log('thursday');
+//             break
+//         }
+//         default : console.log('kuch bhi nhi ');
+        
+// }
+
+// let day = Number(prompt("Enter day number"))
+// switch(day){
+//         case 1: {
+//             console.log('monday');
+//             break
+//         }
+//         case 2 : {
+//              console.log('tuesday');
+//              break
+//         }
+//         case 3 : {
+//             console.log('wednesday');
+//             break
+//         }
+//         case 4 : {
+//             console.log('thursday');
+//             break
+//         }
+//         default : console.log('kuch bhi nhi ');
+        
+// }
 
 // let x = 0
 // if(x){

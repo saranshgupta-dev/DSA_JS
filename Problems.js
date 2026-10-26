@@ -92,3 +92,116 @@
 //         return `${name} is not valid voter. `
 //     }
 // }
+
+// problem : 11 check if a Year is a Leap year 
+// function isLeapYear(year){
+//     if((year%4 == 0 && year % 100 != 0)||year%400 == 0){
+//         console.log("Leap year");
+//     }else{
+//         console.log("Not a Leap Year");
+//     }
+// }
+
+// problem : 12 Calculate Final amount after discount 
+// function calculateFinalAmount(amount){
+//     let dis = 0
+//     if(amount>0 && amount<=5000) dis = 0
+//     else if (amount>=5000 && amount<=7000) dis = 5
+//     else if (amount>=7000 && amount<= 9000) dis = 10
+//     else dis = 20
+//     console.log("Total amount is ",amount);
+//     console.log("Discount amount is ", (amount*dis)/100);
+//     console.log("Payable amount is ",amount -(amount*dis)/100);
+// }
+
+// problem : 13 Calculate Electricity Bill Based on Units Consumed 
+// function calculateElectricityBill(unit){
+//     let amount = 0
+
+// if(unit>= 400){
+//     amount = (unit-400)*13
+//     unit = 400
+// }
+// if(unit >=200 && unit <=400){
+//     amount = amount + (unit -200)*8
+//     unit = 200
+// }
+// if(unit >= 100 && unit<=200){
+//     amount = amount + (unit-100)*6
+//     unit = 100
+// }
+// if(unit <=100){
+//    amount = amount + (unit*4.2)
+// }
+// }
+// console.log(amount);
+
+// problem : 14 Find the Greatest  Number Among Three Numbers 
+// function findGreatest(a,b,c){
+//     if(a>=b && a>=c){
+//         return a
+//     }
+//     if(b>=a && b>=c){
+//         return b
+//     }
+//     if(c>=a && c>=b){
+//         return c
+//     }
+// } 
+
+// problem : 15 Print Day Name from Day Number 
+// function printDayName(day){
+//     if(day==1){
+//         return 'Monday'
+//     }
+//     else if(day == 2){
+//         return 'Tuesday'
+//     }
+//     else if(day == 3){
+//         return 'Wednesday'
+//     }
+//     else if(day == 4){
+//         return 'Thursday'
+//     }
+//     else if(day == 5){
+//         return 'Friday'
+//     }
+//     else if(day == 6){
+//         return 'Saturday'
+//     }
+//     else if(day == 7){
+//         return 'Sunday'
+//     }
+//     else{
+//         return 'Invalid day number'
+//     }
+// }
+
+// problem : 16 Determine Movie Status Based on Rating
+// class Solution{
+//     get_movie_status(ratingStr){
+//         if(ratingStr>=0.0 && ratingStr<=2.0){
+//             return 'Flop'
+//         }
+//         else if(ratingStr>=2.1 && ratingStr<=3.4){
+//             return 'Semi-hit'
+//         }
+//         else if(ratingStr>=3.5 && ratingStr<=4.5){
+//             return 'Hit'
+//         }
+//         else{
+//             return 'Super hit'
+//         }
+//     }
+// }
+
+// problem : 17 Check if a Character is a Vowel or Consonant 
+// function checkChar(ch){
+//     if('aeiouAEIOU'.includes(ch) && ch.length == 1){
+//         return 'Vowel'
+//     }else if('bcdfghjklmnrstvwxyzBCDFGHJKLMNRSTVWXYZ'.includes(ch) && ch.length == 1){
+//         return 'Consonant'
+//     }else{
+//         return 'Invalid input'
+//     }
+// }
