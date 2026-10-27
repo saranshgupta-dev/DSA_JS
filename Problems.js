@@ -205,3 +205,72 @@
 //         return 'Invalid input'
 //     }
 // }
+
+// loops related 
+// problem : 18  Print Natural Number from N to 1
+// function printNumbers(n){
+//     for(let i=n; i>=1; i--){
+//         Process.stdout.write(i + ' ')
+//     }
+// }
+
+// problem : 19 Print Natural Numbers 1 to n 
+// function naturalnumbers(n){
+//  for(let i=1; i<=n; i++){
+//     process.stdout.write(i + ' ')
+//  }
+// }
+
+// problem : 20 Sum up to N Terms 
+// function sumUpToN(n){
+//     let sum = 0
+//     for(let i = 1; i<=n; i++){
+//      sum = sum + i
+//     }
+//     return sum
+// }
+
+// problem : 21 factorial of a number 
+// function factorial(n){
+//     let fact = 1
+//  for(let i = 1 ;i<=n ; i++ ){
+//     fact = fact * i
+//  }
+//  return fact 
+// }
+
+// problem : 22 print all factors of a Number
+// function printFactors(n){
+//     for(let i =1 ; i<=n; i++){
+//         if(n%2 === 0){
+//             Process.stdout.write(i + ' ')
+//         }
+//     }
+// }
+
+// problem : 23 Sum of Even and Odd Numbers in a range 
+// function sumEvenOddInRange(start,end){
+//     let sumEven = 0
+//     let sumOdd = 0
+//     for(i=start; i<=end; i++){
+//         if(i%2===0){
+//          sumEven += i
+//         }else{
+//             sumOdd += i
+//         }
+//     }
+//     return [sumEven,sumOdd]
+// } 
+
+// problem : 24 Check if a number is prime 
+// function isPrime(n){
+//  if(n<=1) return 'Not Prime'
+
+//  for(let i = 2; i<n; i++){
+//     if(n%2 === 0){
+//         return 'Not Prime'
+//     }
+//  }
+//  return 'Prime'
+// }
+

@@ -1,3 +1,111 @@
+// check if the Number is Prime or Not
+// Method - 01
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter Number'))
+// let count = 0
+// for(let i =0; i<=n; i++){
+//   if(n%i==0) count++
+// }
+//   if(count==2) console.log('prime number'); // jiske two factor
+// else console.log('not prime number');
+// Method - 02
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter Number'))
+// let count = 0
+// if(n<=1) console.log('not prime number');
+// else {
+//   for(let i = 2; i<=n/2; i++){
+//   if(n%i ==0) count ++
+// }
+// if(count == 0) console.log('prime number'); // at least 0 or 1 prime 
+// else console.log('not prime number');
+// }
+// Method - 03 most efficient method 
+let prompt = require('prompt-sync')()
+let n = Number(prompt('Enter Number'))
+
+if(n<=1) console.log('not prime');
+else if (n==2) console.log('Even prime');
+else if(n%2==0) console.log('not prime(koi even prime nhi hai )');
+else {
+  let isPrime = true
+  for(let i=3; i<=Math.floor(Math.sqrt(n)); i= i+2){
+         if(n%i==0){
+          isPrime = false
+          break
+         }
+  }
+  console.log(isPrime?'prime':'not prime');
+  
+}
+
+// Print all factors of a Number
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter Number'))
+// for(let i =0; i<=n/2; i++){
+//   if(n%i == 0) process.stdout.write(i+' ')
+// }
+// console.log(n);
+
+// Print the sum of all even & odd numbers in a range separately. 
+// let start = Number(prompt("Enter start range "))
+// let end = Number(prompt("Enter end range"))
+
+// let sumEven = 0
+// let sumOdd = 0
+// console.log('my start value is',start);
+// console.log('my end value is',end);
+// if(start > end) {
+//         [start,end] = [end,start]
+//         console.log('after swaping ');
+//         console.log(start,end);
+// }
+// for(i=start; i<=end; i++){
+//   if(i%2 == 0){
+//         sumEven += i
+//   }else{
+//         sumOdd += i
+//   }
+// }
+
+// console.log('the sum of Even is ',sumEven);
+// console.log('the sum of Odd is ',sumOdd);
+
+// factorial of n numbers 
+// let n = Number(prompt('Enter Number'))
+// let fact = 1 // because 0 se multiplication result 0 ayega
+// for(let i =1 ; i<=n; i++){
+//      fact = fact * i
+// }
+// console.log(fact);
+
+// sum up to n terms 
+// let sum = 0
+// let n = Number(prompt("Enter Number"))
+// for(let i = 0 ;  i<=n ; i++){
+//  sum += i 
+// }
+// console.log(sum); // 5+4+3+2+1 = 15
+
+// Take number as input and print its table 
+// let n = Number(prompt('Enter Number'))
+// for(let i = 1; i<=10; i++){
+//         console.log(n + ' * ' + i + ' = ' +(n*i));
+// }
+
+// reverse for loop. print  n to 1 
+// let N = Number(prompt('Enter Number'))
+// for(let i = N; i>=1; i--){
+//         console.log(i);
+// }
+
+// print natural number up to n 
+// let n = Number(prompt("Enter Number"))
+// for(let i =1; i<=n; i++){
+//         console.log(i);
+// }
+
+// Accept an integer and print hello world n times 
 // let n = Number(prompt("Enter Number"))
 // // n times hello world print karana hai
 // for(i= 1; i<=n; i++){
