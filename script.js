@@ -1,3 +1,98 @@
+// for(let i =1; i <=10; i++){
+//          console.log(i,'sakshi')}
+
+// let prompt = require('prompt-sync')()
+// let n  = Number(prompt('Enter a Number'))
+// let copy = n
+// let count = 0
+// while(n>0){
+//         count++
+//         n = Math.floor(n/10)
+// }
+// if(count != 10) console.log('invalid ISBN');
+// else{
+
+// }
+// let n = "0306406152";
+// let copy = n
+// let count = 0
+// while(copy>0){
+//    count++
+//    copy = Math.floor(copy/10)
+// }
+// // console.log(count); // count = 3
+// // console.log(copy);  // copy = 0
+// // console.log(n);     // n = 589
+// let ans  = 0
+// let place = 1
+// if(count === 10){
+//    while(n>0){
+//      let digit = n % 10
+//      ans = ans + digit * place
+//      place++
+//      n = Math.floor(n/10)
+//     }
+
+//     if(ans%11 === 0){
+//         console.log('this number is ISBN');
+//     }else{
+//         console.log('not ISBN');
+//     }  
+// }else{
+//         console.log('Not ISBN');
+// }
+
+// reverse a number if  n = 589 then make it 985
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a number ')) 
+
+// let rev = 0
+// while(n>0){
+//         rev = (rev * 10) + (n%10) // (n%10) ek ek digit nikalega
+//         n = Math.floor(n/10)      // 589 = 58 remaing digit ko n bana dega
+// }
+// console.log(rev);
+
+// while loop is Entry Control loop 
+// n Number ki digits separate karna 
+// let n = 589
+// while(n>0){
+//    let rem = n%10    // 589 % 10 = 9 seprate then 8 seprate 5 seprate
+//    n = Math.floor(n/10) // 589 / 10 = 58 is next n 
+//    console.log(rem)
+// }
+
+// n digits ko sum karna 
+// let n = 589
+// let sum = 0
+// while(n>0){
+//    let rem  = n % 10 // rem = 9 , 8 , 5 
+//      sum = sum + rem  // 0 + 9 = 9+8 = 17 + 5 = 22
+//      n = Math.floor(n/10) // 589 / 10 = 58 now it is n 
+// }
+//  console.log(sum);
+        
+// let i = 1
+// while(i<=10){
+//    console.log(i);
+//    i++
+// }
+// while(false){   // false condition mai ek bhi bar nhi chalega
+//         console.log('hey hii');
+// }
+// while(true){             // condition true hai it means ifinite times chalega
+//   console.log('hello world');
+// }
+
+// for(i=1; i<=5; i++){
+//         if(i==4) break // break ke bad loop stop ho jayega 
+//         console.log('hello world');
+// }
+// for(i=1; i<=5; i++){
+//         if(i==4) continue // current iteration ko ignore kiya
+//         console.log(i); // output mai 4 nhi ayega 
+// }
+
 // check if the Number is Prime or Not
 // Method - 01
 // let prompt = require('prompt-sync')()
@@ -21,23 +116,22 @@
 // else console.log('not prime number');
 // }
 // Method - 03 most efficient method 
-let prompt = require('prompt-sync')()
-let n = Number(prompt('Enter Number'))
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter Number'))
 
-if(n<=1) console.log('not prime');
-else if (n==2) console.log('Even prime');
-else if(n%2==0) console.log('not prime(koi even prime nhi hai )');
-else {
-  let isPrime = true
-  for(let i=3; i<=Math.floor(Math.sqrt(n)); i= i+2){
-         if(n%i==0){
-          isPrime = false
-          break
-         }
-  }
-  console.log(isPrime?'prime':'not prime');
-  
-}
+// if(n<=1) console.log('not prime');
+// else if (n==2) console.log('Even prime');
+// else if(n%2==0) console.log('not prime(koi even prime nhi hai )');
+// else {
+//   let isPrime = true
+//   for(let i=3; i<=Math.floor(Math.sqrt(n)); i= i+2){
+//          if(n%i==0){
+//           isPrime = false
+//           break
+//          }
+//   }
+//   console.log(isPrime?'prime':'not prime'); 
+// }
 
 // Print all factors of a Number
 // let prompt = require('prompt-sync')()

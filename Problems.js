@@ -265,12 +265,44 @@
 // problem : 24 Check if a number is prime 
 // function isPrime(n){
 //  if(n<=1) return 'Not Prime'
-
-//  for(let i = 2; i<n; i++){
-//     if(n%2 === 0){
-//         return 'Not Prime'
+//  else if(n==2) return 'Prime'
+//  else if(n%2==0) return 'Not Prime'
+//  else{
+//     let isPrime = true
+//     for(let i = 3; i<=Math.floor(Math.sqrt(n));i=i+2){
+//         if(n%i==0){
+//             isPrime = false
+//             break
+//         }
 //     }
+//     return isPrime?'Prime':'Not Prime'
 //  }
-//  return 'Prime'
 // }
 
+// problem : 25 Calculate Power of a Number 
+// function calculatePower(a,b){
+//     // return Math.pow(a,b) // solution:1
+//     // return a ** b       // solution :2
+//     let result = 1
+//     for(let i = 1; i<=b; i++){  // solution : 3
+//        result = result * a       // 1*2 = 2*2 = 4*2 = 8
+//     }
+// }
+
+// problem : 26 Check if a Number is Strong
+// function isStrongNumber(n){
+//     let sumFact = 0
+//     let num = n
+
+//     while(num>0){
+//         let digit = num%10 // 145 = 5 (last digit find kiya)
+//         let fact = 1
+
+//         for(let i=1;  i<=digit; i++){
+//             fact = fact * i
+//         }
+
+//         sumFact = sumFact + fact
+         
+//     }
+// }  
