@@ -1,8 +1,46 @@
+// My Method : computer guess the Number or compare with my number 
+// let prompt = require('prompt-sync')()
+// let n 
+// do{
+//     // console.log('hello world');
+//     let guess = Math.floor(Math.random()*100)
+//     // console.log(guess);
+//     n = Number(prompt('Enter a Number')) // if n = 1 so loop again chalega
+//     if(guess === n){
+//        console.log('saransh win');
+//     }else{
+//        console.log('computer win');
+//     }
+//     console.log('computer guess is :',guess);
+// }while(n==1)
+
+// let i = 1
+// do{
+//     console.log('hello this is saransh');
+//     i++
+//     console.log(i); // 2 , 3, 4, 5, 6(false hua)
+// }while(i<=5)
+
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a Number')) // 76
+// let copy = n
+// let count = 0 // 2
+// let sq = n*n // 76*76 = 5776
+// while(n>0){
+//     count++
+//     n = Math.floor(n/10)
+// }
+// if(sq%Math.pow(10,count)===copy){ // 10^2 = 100,  5776%100 = 57 with remainder 76
+//     console.log('automorphic number');
+// }else console.log('no automorphic number');
+// console.log(count);
+
+
 // for(let i =1; i <=10; i++){
 //          console.log(i,'sakshi')}
 
 // let prompt = require('prompt-sync')()
-// let n  = Number(prompt('Enter a Number'))
+// let n  = Number(prompt('Enter a Number')) // 8175257660 // 1566199093
 // let copy = n
 // let count = 0
 // while(n>0){
@@ -11,18 +49,33 @@
 // }
 // if(count != 10) console.log('invalid ISBN');
 // else{
-
+//     let ans = 0
+//      while(copy>0){
+//         let digit = copy%10
+//         ans = ans + (digit*count)
+//         count -- 
+//         copy = Math.floor(copy/10)
+//         }
+//         console.log(ans);
+//   console.log(ans%11===0?'valid ISBN':'invalid ISBN');
 // }
-// let n = "0306406152";
+
+
+// this is code working only integer  ISBN number 
+// let n = 8175257660; // 1: yes it is ISBN
+// let n = 1861972717 //  2:  yes it is ISBN
+// let n = 8177587658  // Not ISBN 
+// let n = 316148410X //Restrict:number mai NO other char or symbols
+// let n = 0344455 // Restrict : number not start with zero
 // let copy = n
 // let count = 0
 // while(copy>0){
 //    count++
 //    copy = Math.floor(copy/10)
 // }
-// // console.log(count); // count = 3
-// // console.log(copy);  // copy = 0
-// // console.log(n);     // n = 589
+// console.log(count); // count = 3
+// console.log(copy);  // copy = 0
+// console.log(n);     // n = 589
 // let ans  = 0
 // let place = 1
 // if(count === 10){
