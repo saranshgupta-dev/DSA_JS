@@ -322,3 +322,99 @@
 // }else{
 //     console.log('no');
 // }
+
+// problem : 28 Harshad Number Check 
+// class Solution{
+//     checkHarshad(n){
+//         let copy = n
+//         let sum = 0
+
+//         while(n>0){
+//             let digit = n%10
+//             sum += digit
+//             n = Math.floor(n/10)
+//         }
+//         if(18%sum == 0){
+//             return 'Harshad Number'
+//         }else{
+//             return 'Not Harshad Number'
+//         }
+//         return sum
+//     }
+// }
+
+// problem : 29 Abundant Number Checker 
+// class Solution{
+//     checkAbundant(n){
+//         let fact = 1
+//         let sum = 0
+
+//         while(fact<n){
+//             if(n%fact===0){
+//                sum = sum + fact 
+//             }
+//             fact++
+//         }
+
+//         if(sum > n){
+//             console.log('Yes');
+//         }else{
+//             console.log('No');
+//         }
+//     }
+// }
+
+// problem : 30 Finding Prime Factor of a Number 
+// primeFactor(n){
+//     let result = []
+
+//     if(n<=1){
+//       console.log('No prime factor');
+//     }
+//     for(let i = 2; i<=n; i++){
+//         while(n%i===0){
+//             result.push(i)
+//             n = n/1
+//         }
+//     }
+//     return result.join(' ')
+// }
+
+// problem : 31 Armstrong Number Checker 
+// checkArmstrong(n){
+//     let copy = n
+//     let count = 0
+//     while(copy>0){
+//      count++
+//      copy = Math.floor(copy/10)
+//     }
+//     copy = n
+//     let sum = 0
+//     while(copy>0){
+//         let digit = copy%10
+//         let pow = Math.pow(digit,count)
+//         sum = sum+pow
+//        copy = Math.floor(n/10)
+//     }
+//     if(sum === n){
+//         return 'Armstrong'
+//     }else{
+//         return 'Not Armstrong'
+//     }
+// } 
+
+// problem : 32 Check if a Number is a Neon Number 
+// function solve(n){
+//     let sq = n*n
+//     let sum = 0
+//     while(sq>0){
+//         let digit = sq%10
+//         sum = sum+digit
+//         sq = Math.floor(sq/10)
+//     }
+//     if(sum === n){
+//         return 'Yes'
+//     }else{
+//         return 'No'
+//     }
+// }

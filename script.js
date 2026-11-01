@@ -1,3 +1,171 @@
+// console.log(typeof([2,2,3,5])); // array is a object
+// console.log(typeof(2,2,3));     // Numbers
+
+// let n = 45
+
+// let result = []
+
+// if(n<=1){
+//         console.log('no prime factors');
+// } 
+// for(let i=2; i<=n;i++){
+//      while(n%i===0){
+//         result.push(i)
+//         n = n/i
+//      }   
+// }
+// console.log(result.join(' '));
+
+// let n = 94
+// let copy = n
+// let count = 0
+// while(copy>0){
+//         count++
+//         copy = Math.floor(copy/10)
+// }
+// // console.log(count);
+// copy = n
+// let sum = 0
+// while(copy>0){
+//         let digit = copy%10
+//         let pow = Math.pow(digit,count)
+//         sum = sum + pow
+//         copy = Math.floor(copy/10)
+// }
+// if(sum === n){
+//         console.log('yes');
+// }else {
+//         console.log('No');
+// }
+
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a number'))
+
+// let sq = n*n
+// let sum = 0
+// while(sq>0){
+//         let digit = sq%10
+//         sum = sum + digit
+//         sq = Math.floor(sq/10)
+// }
+// if(sum === n){
+//         console.log('Yes');
+// }else console.log('No');
+
+// let prompt = require('prompt-sync')()
+// let dish
+// let again
+// let n 
+// do{
+//     console.log('====Welcome to Resturant====');
+//     console.log('Press 1 for Indian Food');
+//     console.log('Press 2 for South Indian');
+//     console.log('Press 3 for Italien Food');
+//     n = Number(prompt('Choose Food type: '))
+  
+//     if(n===1){
+//         do{
+//           console.log('---- Indian Food ----')
+//           console.log('Press 1 for Mattar Panner');
+//           console.log('Press 2 for Butter Roti');
+//           console.log('Press 3 for Gulab Jamun');
+
+//           dish = Number(prompt('Choose Indian Dish: '))
+
+//           if(dish===1 ) console.log('yor ordered Mattar Panner');
+//           else if(dish===2)console.log('you ordered Buttar Roti');
+//           else if(dish===3)console.log('you ordered Gulab Jamun');
+//           else console.log('invalid dish choice');
+
+//           again = Number(prompt('Enter 1 to choose another Indian dish , 0 to exit: '))
+//         }while(again === 1)
+
+//     }else if(n===2){
+//         do{
+//             console.log('---- South Indian Food ----');
+//             console.log('Press 1 for Masala Dosa ');
+//             console.log('Press 2 for Idli Sambhar ');
+//             console.log('Press 3 for Cheese Dosa ');
+
+//             dish = Number(prompt('Choose South Indian Dish: '))
+
+//             if(dish === 1) console.log('you ordered Masala Dosa');
+//             else if(dish === 2)console.log('you ordered Idli Sambhar');
+//             else if(dish === 3)console.log('you ordered Cheese Dosa');
+//             else console.log('invalid dish choice');
+
+//             again = Number(prompt('Enter 1 to choose South Indian food, 0 for exit: '))
+//         }while(again === 1) // condition true to again loop chalega condition false mai exist
+//     }else if(n===3){
+//         do{
+//             console.log('---- Italien Food ----');
+//             console.log('Press 1 for Pizza Margherita');
+//              console.log('Press 2 for Spaghetti');
+//             console.log('Press 3 for Fettuccine Alfredo');
+
+//             dish = Number(prompt('Choose Italian dish: '))
+
+//             if(dish === 1)console.log('you ordered Pizza Margherita');
+//             else if(dish === 2)console.log('you ordered Spaghetti');
+//             else if(dish === 3)console.log('you ordered Fettucine Alfredo');
+//             else console.log('invalid dish choice');
+
+//             again = Number(prompt('Enter 1 for choice Italien Food, 0 for exit: '))
+//         }while(again === 1)
+//     }else{
+//         console.log(' Invalid Food Type');
+//     }
+//     n = Number(prompt('Press 1 to return to main manu , 0 to exit: '))
+// }while(again === 1)    
+
+
+// // let prompt = require('prompt-sync')()
+// // let n;
+// // do{
+// //     console.log('Enter 1 for Addition');
+// //     console.log('Enter 2 for Subtraction');
+// //     console.log('Enter 3 for Multiplication');
+// //      n = Number(prompt('Enter a Number: '))
+
+// //     switch(n) {
+// //        case 1 : {
+// //         let a = Number(prompt('Enter First digit : '))
+// //         let b = Number(prompt('Enter second digit: '))
+// //         console.log('Addition' , (a+b));
+// //         break
+// //        }
+// //        case 2 : {
+// //         let a = Number(prompt('Enter first digit: '))
+// //         let b = Number(prompt('Enter second digit: '))
+// //         console.log('Subtraction',(a-b));
+// //         break
+// //        }
+// //        case 3 : {
+// //         let a = Number(prompt('Enter first digit: '))
+// //         let b = Number(prompt('Enter second digit: '))
+// //         console.log('Multiplication', (a*b));
+// //         break
+// //        }
+// //        default : {
+// //         console.log('invalid Number');
+// //        }
+// //      }
+// //      n = Number(prompt('Enter 10 for Recontinue Program: '))
+// }while(n==10)
+
+// let prompt = require('prompt-sync')()
+// let computer = (Math.floor(Math.random()*100)+1)
+// let user
+// let attempt = 0
+// do{
+//   attempt++
+//   user = Number(prompt('Enter a number b/w 1 to 100: ')) // in 22 two times correct guess
+//   if(user>computer) console.log('too large');
+//   else if(user<computer) console.log('too small');
+//   else if(user === computer) console.log('Congratulation,You Guessed the Number in this attempt:',attempt)
+//   else console.log('Wrong Guess');
+// }while(user != computer)
+
 // My Method : computer guess the Number or compare with my number 
 // let prompt = require('prompt-sync')()
 // let n 
