@@ -418,3 +418,77 @@
 //         return 'No'
 //     }
 // }
+
+// problem : 33 Right Triangle Star Pattern 
+// let n = 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write('* ')
+//     }
+//     console.log();
+// }
+
+// problem : 34 Right Triangle Number Pattern 
+// let n =5 
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(j+' ')
+//     }
+//   console.log();
+// }
+
+// Problem : 35 Right Triangle Alphabet Pattern 
+// let n= 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(String.fromCharCode(64 + j)+ ' ')
+//     }
+//     console.log();
+// }
+
+// Problem : 36 Inverted Right Triangle - Star Pattern 
+// let n = 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=n-i+1; j++){
+//         process.stdout.write('* ')
+//     }
+//     console.log();
+// }
+
+// Proble : 37 Mirrored Right Triangle - Star Pattern 
+// let n = 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write('  ')
+//     }
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write('* ')
+//     }
+//     console.log();
+// }
+
+// Problem : 38 Print X Star Pattern 
+// let n= 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=n;j++){
+//         if(i==j || i+j==n+1){
+//             process.stdout.write('*')
+//         }else{
+//             process.stdout.write(' ')
+//         }
+//     }
+//     console.log();
+// }
+
+// Problem : 39 Print V shape star 
+// let n = 5
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=2*n-i; j++){
+//         if(i==j || j==2*n-i){
+//             process.stdout.write('*')
+//         }else{
+//             process.stdout.write(' ')
+//         }
+//     }
+//     console.log();
+// }

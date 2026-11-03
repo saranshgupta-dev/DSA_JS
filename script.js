@@ -1,3 +1,120 @@
+// Inverted Right angle triangle 
+// Method : 01 
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a Number'))
+// for(let i= 1; i<=n; i++){
+//         for(let j=1; j<=n-i+1; j++ ){
+//                 process.stdout.write('* ')
+//         }
+//         console.log();
+// }
+// console.log();
+// Method : 02
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a number'))
+// for(let i=1; i<=n; i++){
+//         for(let j=n; j>=i; j--){
+//                 process.stdout.write('* ')
+//         }
+//         console.log();
+// }
+// console.log();
+
+// Star print kiya 
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a Number'))
+// for(let i = 1; i<=n; i++){
+//         for(let j=1 ; j<=i; j++){
+//                 process.stdout.write('* ')
+//         }
+//         console.log();
+// }
+// console.log();
+
+// Numbers print kiya 
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a Number'))
+// for(let i = 1; i<=n; i++){
+//         for(let j=1 ; j<=i; j++){
+//                 process.stdout.write(j+ " ")
+//         }
+//         console.log();
+// }
+// console.log();
+
+// Alphabet print karna 
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a number'))
+// for(let i=1; i<=n; i++){
+//         for(let j=1 ; j<=i; j++){
+//                 process.stdout.write(String.fromCharCode(64 + j)+ ' ')
+//         }
+//         console.log();
+// }
+// console.log();
+
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a Number'))
+
+// for(let i=1; i<=n; i++){    // row
+//      for(let j=1; j<=n; j++){   // coloums
+//         // console.log('* ');
+//         process.stdout.write('* ')
+//      }
+//      console.log();
+// }
+// console.log();
+
+// for(let i=1; i<=n; i++){
+//      process.stdout.write('* ')
+// }
+// console.log();
+
+// for(let i=1; i<=n; i++){
+//      process.stdout.write('* ')
+// }
+// console.log();
+
+// for(let i=1; i<=n; i++){
+//      process.stdout.write('* ')
+// }
+// console.log();
+
+// Horizontal ke liye 
+// process.stdout.write('* ')
+// process.stdout.write('* ')
+// process.stdout.write('* ')
+// process.stdout.write('* ')
+// process.stdout.write('* ')
+
+// Vertical ke liye console.log('*'); ka use 
+// console.log('* ');
+// console.log('* ');
+// console.log('* ');
+// console.log('* ');
+// console.log('* ');
+
+// // Nested loops : Pattern Programing 
+// // strong NUmber 
+// let prompt = require('prompt-sync')()
+// let n = Number(prompt('Enter a number'))
+// let copy = n
+// let sum = 0
+// while(copy>0){        // outer loop
+//         let digit = copy%10
+//         let fact = 1
+//        for(let i=1; i<=digit; i++){ // inner loop 
+//         fact = fact * i
+//        }
+//        sum = sum + fact
+//         copy = Math.floor(copy/10)
+// }
+// if(n==sum){
+//         console.log('strong number');
+// }else{
+//         console.log('not strong number');
+// }
+
 // console.log(typeof([2,2,3,5])); // array is a object
 // console.log(typeof(2,2,3));     // Numbers
 
