@@ -492,3 +492,5 @@
 //     }
 //     console.log();
 // }
+
+// Yaha tak ke 45 question hote solve remaining 6 question then move to array 
